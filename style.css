@@ -713,6 +713,28 @@ img { display: block; max-width: 100%; }
   color: var(--gray-400);
 }
 
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  color: var(--gray-400);
+  transition: color var(--speed) var(--ease),
+              background var(--speed) var(--ease);
+}
+.social-icon:hover {
+  color: var(--gray-900);
+  background: var(--gray-100);
+}
+
 @media (max-width: 560px) {
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
 }
